@@ -16,14 +16,47 @@
   }
 }
 
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #2a2a2a;
+  font-family: var(--font-keepcalm);
+}
+
+/*header {*/
+/*  height: 80px;*/
+/*  background-color: #1E1E1E;*/
+/*}*/
+
+.wrap {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrap-banner {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-banner-font{
+  font-family: var(--font-keepcalm);
 }
 
 @layer utilities {
