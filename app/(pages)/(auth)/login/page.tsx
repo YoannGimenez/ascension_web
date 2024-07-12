@@ -1,10 +1,9 @@
-import {SignupFormDemo} from "@/components/Forms/RegisterForm";
-import {TextGenerateEffectDemo} from "@/components/Text/WorldText";
+import {LoginForm} from "@/components/Forms/LoginForm";
 
 export default function Login(){
     return(
         <div className={"wrap"}>
-            <SignupFormDemo/>
+            <LoginForm/>
         </div>
     )
 }
