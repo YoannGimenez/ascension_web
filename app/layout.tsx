@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import {Inter, Roboto, Roboto_Condensed} from "next/font/google";
 import localFont from 'next/font/local'
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { useAuth } from "@/hooks/useAuth";
+
 
 const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ weight: "400", subsets: ["latin"]});
+const roboto = Roboto({ weight: ["400","700"], subsets: ["latin"]});
 const keepCalm = localFont({
     src: [
         {
@@ -16,6 +18,7 @@ const keepCalm = localFont({
     ],
     variable: '--font-keepcalm'
 })
+const robotoCondensed = Roboto_Condensed({ weight: "400", subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "Start your Ascension",
@@ -29,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${keepCalm.variable} ${roboto.className}`}>
+      <body className={`${keepCalm.variable} ${roboto.className} ${robotoCondensed.className}`}>
       <Header/>
       <main>{children}</main>
       <Footer/>

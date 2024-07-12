@@ -56,7 +56,8 @@ body {
 }
 
 .hero-banner-font{
-  font-family: var(--font-keepcalm);
+  font-family: var(--font-robotoCondensed);
+  font-weight: bold;
 }
 
 @layer utilities {

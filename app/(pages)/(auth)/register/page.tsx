@@ -1,10 +1,9 @@
-import Tiptap from "@/components/Forms/Tiptap";
+import {RegisterForm} from "@/components/Forms/RegisterForm";
 
 export default function Register(){
     return(
         <div className={"wrap"}>
-            <div>register</div>
-            <Tiptap/>
+            <RegisterForm/>
         </div>
     )
 }
