@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import { useAuth } from "@/hooks/useAuth";
+import Toaster from "@/components/ui/toaster"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,9 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${keepCalm.variable} ${roboto.className} ${robotoCondensed.className}`}>
-      <Header/>
-      <main>{children}</main>
-      <Footer/>
+      <div className={"min-h-[100vh] flex flex-col"}>
+          <Header/>
+          <Toaster/>
+          {children}
+          <Footer/>
+      </div>
       </body>
     </html>
   );

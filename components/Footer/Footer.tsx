@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className={"h-[200px] bg-black mt-auto"}>
             <div className={"wrap-banner flex flex-col items-center h-[100%] justify-center gap-6"}>
                 <div>
-                    <Image src={"ascension_logo.svg"} alt={"Logo Ascension"} width={50} height={50}/>
+                    <Image src={"/ascension_logo.svg"} alt={"Logo Ascension"} width={50} height={50}/>
                 </div>
                 <div>
                     <nav>
