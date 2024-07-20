@@ -14,14 +14,14 @@ const Header = () => {
         <header className={"h-[80px] bg-[#1E1E1E] px-4 py-1 wrap-header text-[18px] max-xl:text-[14px] max-lg:text-[9px] font-bold"}>
             <div className={"flex justify-between items-center h-[100%]"}>
                 <div className="flex justify-between items-center">
-                    <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D]"}  href="/"><Image src={"/ascension_logo.svg"} alt={"Logo Ascension"} width={50} height={50}/></Link>
+                    <Link className={"px-3 py-1 rounded-xl hover:bg-[#3D3D3D]"}  href="/"><Image src={"/ascension_logo.svg"} alt={"Logo Ascension"} width={50} height={50}/></Link>
                 </div>
                 <div className="flex justify-start items-center w-[60%] max-md:hidden">
                     <nav>
                         <ul className={"flex gap-4"}>
                             <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 tracking-wider"} href=""><li className={"uppercase"}>The Game</li></Link>
                             <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 tracking-wider"} href="/world"><li className={"uppercase"}>The World</li></Link>
-                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 tracking-wider"} href=""><li className={"uppercase"}>The Champions</li></Link>
+                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 tracking-wider"} href="/characters"><li className={"uppercase"}>The Characters</li></Link>
                             <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 tracking-wider"} href="/forum"><li className={"uppercase"}>The Forum</li></Link>
                         </ul>
                     </nav>
@@ -31,7 +31,7 @@ const Header = () => {
                         {isAuthenticated ? (
                             <li
                                 onClick={logout}
-                                className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 font-bold uppercase"}
+                                className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 font-bold uppercase cursor-pointer"}
                             >
                                 Se déconnecter
                             </li>

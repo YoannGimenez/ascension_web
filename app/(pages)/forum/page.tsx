@@ -5,7 +5,7 @@ import Link from "next/link";
 import SinglePostForumList from "@/components/Forum/SinglePostForumList";
 import {useAuth} from "@/hooks/useAuth";
 
-const Forum = () => {
+export default function Forum(){
 
     const { isAuthenticated } = useAuth();
     const [posts, setPosts] = useState([]);
@@ -44,5 +44,3 @@ const Forum = () => {
         </div>
     )
 }
-
-export default Forum;
