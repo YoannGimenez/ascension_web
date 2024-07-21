@@ -12,10 +12,8 @@ const Footer = () => {
                 <div>
                     <nav>
                         <ul className={"flex gap-4"}>
-                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 text-[18px] font-bold tracking-wider"} href="/"><li className={"uppercase"}>The Ascension</li></Link>
-                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 text-[18px] font-bold tracking-wider"} href=""><li className={"uppercase"}>The Game</li></Link>
-                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 text-[18px] font-bold tracking-wider"} href="/world"><li className={"uppercase"}>The World</li></Link>
-                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 text-[18px] font-bold tracking-wider"} href=""><li className={"uppercase"}>The Champions</li></Link>
+                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 text-[18px] font-bold tracking-wider"} href="/terms-of-service"><li className={"uppercase"}>Terms of Service</li></Link>
+                            <Link className={"px-4 py-1 rounded-xl hover:bg-[#3D3D3D] hover:text-[#DDC089] transition-all duration-300 text-[18px] font-bold tracking-wider"} href="/privacy-and-policy"><li className={"uppercase"}>Privacy and Policy</li></Link>
                         </ul>
                     </nav>
                 </div>
