@@ -55,7 +55,7 @@ export default function Characters(){
                 </div>
 
             ) : (
-                <div className={"flex flex-wrap justify-start gap-4 ml-11"}>
+                <div className={"flex flex-wrap justify-start gap-4 ml-11 justify-center"}>
                     {characterList.map((character: any) => (
                         <button key={character.name} onClick={() => {
                             setSelectedCharacter(character)

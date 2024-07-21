@@ -4,7 +4,10 @@ import React, {useEffect, useState} from "react";
 
     const Post = ({ params }: { params: { id: string }}) => {
 
-        const [post, setPost] = useState({});
+        const [post, setPost] = useState({
+            title: "",
+            content: ""
+        });
 
 
         useEffect(() => {
